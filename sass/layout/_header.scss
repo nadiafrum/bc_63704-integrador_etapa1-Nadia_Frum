@@ -4,6 +4,10 @@
 .main-header {
     display: flex;
     flex-direction: column;
+    background-image: url(../../img/guitarra-portada.jpg);
+    background-position: center;
+    
+    
 
     @media (max-width: 768px) {
         & { /* .main-header */
@@ -29,12 +33,17 @@
 /* ------------------------------------------------- */
 
 .nav-bar {
-    background-color: mediumaquamarine;
+    width: 100%;
+    height: 100px;
+    
+    
 
     &__nav-list { /* .nav-bar__nav-list */
         display: flex;
         list-style-type: none;
-        justify-content: center;
+        justify-content: space-around;
+        
+        
 
         @media (max-width: 768px) {
             & {
@@ -45,13 +54,14 @@
 
     &__nav-item {
         text-align: center;
-        background-color: pink;
+        
     }
 
     &__nav-link {
         display: block;
-        background-color: purple;
+        margin-top: 25px;
         color: #fff;
+        font-size: x-large;
         padding: 1em 2em;
         text-decoration: none;
     }
@@ -69,48 +79,69 @@
 /* ------------------------------------------------- */
 
 .search-bar {
-    background-color: olivedrab;
+    width: 100%;
+    height: 400px;
+    
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__logo-container, /* search-bar__logo-container */
     &__form-container { /* search-bar__form-container */
-        padding: 1em;
+        padding: 4em;
     }
 
     &__logo-container {
-        width: 300px;
-        background-color: yellow;
-        background-image: url("../../img/PlayHardLogoFinal.png");
+        width: 200px;
+        height: 185px;
+        border-radius: 8px;
+        margin-left: 15px;
+        background-image: url(../../img/PlayHardLogoFinal.png);
         background-repeat: no-repeat;
-        background-size: contain;
-
+        background-size: 100%;
+        box-shadow: 8px 8px 5px 0px rgba(194, 191, 191, 0.75);
+        
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
     }
 
+    
+
     &__form-container {
-        background-color: gold;
         display: flex;
         flex-basis: 100%; /* width: 100% */
-        justify-content: center;
+        justify-content: center
     }
 
     &__form-label {
-        background-color: greenyellow;
+        height: 10%;
+        margin-right: 10px;
+       font-size: x-large;
+       font-weight: bolder;
+       text-shadow: 2px 3px 1px rgba(248, 245, 245, 0.6)
+        
     }
 
     &__form-search {
-        background-color: deeppink;
-        width: 70%;
+        background-color: white;
+        width: 43%;
+        height: 10%;
+        
     }
 
     &__form-submit {
         background-color: darkslategray;
         color: white;
+        height: 10%;
     }
 
     &__carrito-container {
+        color: #fff;
         flex: 0 0 3em; /* shorthand (grow shrink basis)  basis = 3*16px => 48 */
-        background-color: goldenrod;
+        height: 15%;
     }
 }
 
