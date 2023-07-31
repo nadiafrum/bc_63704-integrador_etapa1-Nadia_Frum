@@ -1,0 +1,20 @@
+@use '../utils/variables';
+
+
+.section-cards{
+   
+    background-color: variables.$color-fondo;
+
+
+    &__header {
+        text-align: center;
+        color: variables.$color-fuente-1;
+        font-size: xx-large;
+    
+    }
+
+}
+
+main p{
+    margin-bottom: 20px; 
+}
