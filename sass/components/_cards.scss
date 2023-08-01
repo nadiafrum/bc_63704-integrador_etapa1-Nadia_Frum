@@ -1,3 +1,12 @@
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    justify-items: center;
+    }
+
+
+
 .card {
     outline: none;
     width: 220px;
@@ -20,6 +29,7 @@
 
     &:nth-child(5n + 1) {
         background-image: linear-gradient(to top, #aaafad 0%, #60efff 30%);
+       
     }
 
     &:nth-child(5n + 2) {
@@ -82,7 +92,9 @@
         }
 
         &__article { /* .card__article */
-            display: flex;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
         }
 
         & &__image-container { /* .card .card_image-container */
@@ -97,3 +109,4 @@
         }
     }
 }
+
