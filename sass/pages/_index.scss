@@ -1,3 +1,9 @@
+@use '../utils/variables';
+
+body{
+    background-color: variables.$color-fondo;
+}
+
 .section-cards {
     background-color: #f1f2f3;
     padding: 1em;
@@ -10,3 +16,6 @@
     justify-content: center;
 }
 
+hr{
+    border: solid 3px variables.$color-fuente-1;
+}

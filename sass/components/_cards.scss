@@ -3,6 +3,15 @@
     grid-template-columns: repeat(4, 1fr); 
     gap: 10px;
     justify-items: center;
+    min-width: 600px;
+
+    @media (max-width: 768px) {
+        & { 
+           display: flex;
+           align-items: center;
+           
+        }
+    }
     }
 
 
