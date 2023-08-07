@@ -64,10 +64,14 @@
     &__nav-link {
         display: block;
         margin-top: 25px;
+        background-color: variables.$color-fondo-opacity;
         color: variables.$color-fuente-1;
         font-size: x-large;
-        padding: 1em 2em;
+        padding: 0.5em 1em;
         text-decoration: none;
+        border: solid 2px variables.$color-fuente-1;
+        border-radius: 3px;
+        box-shadow: variables.$box-shadow-1;
     }
 
     @media (max-width: 768px) {
@@ -90,6 +94,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px variables.$color-fuente-1;
+    
 
     &__logo-container, /* search-bar__logo-container */
     &__form-container { /* search-bar__form-container */
@@ -116,10 +121,13 @@
     
 
     &__form-container {
+        width: 200px;
+        height: 20px;
         font-size: xx-large;
         display: flex;
         flex-basis: 100%; /* width: 100% */
         justify-content: center
+        
     }
 
     &__form-label {
@@ -136,6 +144,12 @@
         width: 43%;
         height: 25px;
         box-shadow: variables.$box-shadow-1;
+
+        @media (max-width: 768px) {
+            & {
+                min-width: 50%;
+            }
+        }
         
     }
 
