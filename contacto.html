@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Contacto - Play Hard Music Store</title>
-</head>
-<body>
-    
-<header class="header-contacto">
-    <h1 class="header-contacto__titulo">Rock with us!</h1>
-    <p class="header-contacto__parrafo">Completa el siguiente formulario y dejanos tus sugerencias o consultas</p>
-</header>
+  </head>
 
-<fieldset class="formulario">
+  <body>
+    <header class="header-contact  animate__pulse">
+      <h1 class="header-contact__title">Rock with us! 🤘</h1>
+    </header>
 
-    <div>
-        <label class="formulario__nombre" for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <div class="section-contact">
+      <fieldset class="contact">
+        <h2 class="contact__title">Contáctenos</h2>
+
+        <p class="contact__phone">Teléfono: 123456789</p>
+        <p class="contact__address">Dirección: Calle 12 nro 345, CABA</p>
+
+        <p class="contact__time">
+          Horario de atención: Lunes a Sábados de 9hs a 20hs
+        </p>
+
+        <a class="contact__facebook" href="#"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a class="contact__instagram" href="#"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </fieldset>
+
+      <fieldset class="form">
+        <h2 class="form__title">Consultas o sugerencias</h2>
+        <div>
+          <label class="form__name" for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+
+        <div>
+          <label class="form__sirname" for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required />
+        </div>
+
+        <div>
+          <label class="form__mail" for="email">Mail de contacto</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label class="form__phone" for="telefono">Teléfono</label>
+          <input type="number" id="telefono" name="telefono" required />
+        </div>
+
+        <div>
+          <label class="form__comments" for="comentarios"
+            >Consulta o sugerencia</label
+          >
+          <textarea name="comentarios" id="comentarios"></textarea>
+        </div>
+      </fieldset>
     </div>
 
-    <div>
-        <label class="formulario__apellido" for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-    </div>
-
-    <div>
-        <label class="formulario__mail" for="email">Mail de contacto</label>
-        <input type="email" id="email" name="email" required>
-    </div>
-
-    <div>
-        <label class="formulario__telefono" for="telefono">Teléfono</label>
-        <input type="number" id="telefono" name="telefono" required>
-    </div>
-
-    <div>
-        <label class="formulario__comentarios" for="comentarios">Consulta o sugerencia</label>
-        <textarea name="comentarios" id="comentarios"></textarea>
-    </div>
-
-    
-</fieldset>
-
-</body>
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>

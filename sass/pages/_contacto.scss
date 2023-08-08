@@ -1,5 +1,44 @@
 @use '../utils/variables';
 
 body{
-    background-color: variables.$color-fondo;
+    position: relative;
+    background-color: black;
+    background-image: url(../../img/fondo-recital.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    font-family: 'Bacasime Antique', serif;
+    
 }
+
+.header-contact{
+    text-align: center;
+    color: variables.$color-fuente-1;
+    font-size: xx-large;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+
+.section-contact{
+    display: flex;
+    justify-content: space-around;
+    color: variables.$color-fuente-1;
+    
+    @media (max-width: 768px) {
+        & { 
+            flex-direction: column;
+        }
+    }
+}
+
+.contact,
+.form{
+    width: 500px;
+    height: 500px;
+    }
+
+
+
+
+
+
