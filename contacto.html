@@ -49,21 +49,24 @@
 
         <div>
           <label class="form__mail" for="email">Mail de contacto</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="Ej: mail@gmail.com" required />
         </div>
 
         <div>
           <label class="form__phone" for="telefono">Teléfono</label>
-          <input type="number" id="telefono" name="telefono" required />
+          <input type="tel" id="telefono" name="telefono" placeholder="Código de área y número" required />
         </div>
 
         <div>
-          <label class="form__comments" for="comentarios"
-            >Consulta o sugerencia</label
-          >
+          <label class="form__comments" for="comentarios">Consulta o sugerencia</label>
           <textarea name="comentarios" id="comentarios"></textarea>
         </div>
+
+        <button class="form__button">Enviar</button>
+        
       </fieldset>
+
+      
     </div>
 
     <script type="module" src="/main.js"></script>

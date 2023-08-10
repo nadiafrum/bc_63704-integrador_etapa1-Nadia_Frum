@@ -63,10 +63,12 @@
 
     &__nav-link {
         display: block;
+        width:120px;
         margin-top: 25px;
+        font-family:'Ysabeau SC', sans-serif;;
         background-color: variables.$color-fondo-opacity;
         color: variables.$color-fuente-1;
-        font-size: x-large;
+        font-size: large;
         padding: 0.5em 1em;
         text-decoration: none;
         border: solid 2px variables.$color-fuente-1;
@@ -88,7 +90,7 @@
 
 .search-bar {
     width: 100%;
-    height: 400px;
+    height: 350px;
     
     display: flex;
     justify-content: space-between;
@@ -132,11 +134,13 @@
     }
 
     &__form-label {
+        color: variables.$color-fondo;
+        font-weight: bolder;
         height: 20%;
         margin-right: 10px;
-       font-size: x-large;
-       font-weight: bolder;
-       text-shadow: 2px 3px 1px rgba(245,237,237,0.75);
+        font-size: xx-large;
+        font-weight: bolder;
+        text-shadow: 2px 3px 1px rgba(245,237,237,0.75);
         
     }
 
