@@ -1,106 +1,144 @@
-@use '../utils/variables';
+@use "../utils/variables";
 
+.header-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  height: 300px;
+  font-family: "Ysabeau SC", sans-serif;
+  background-image: url(../../img/recital.jpg);
+  background-position: 50% 60%;
+  text-align: center;
+  color: variables.$color-fuente-1;
+  font-size: xx-large;
+  margin-bottom: 3em;
+  border-bottom: solid 3px variables.$color-fuente-1;
 
-.header-contact{
+  @media (max-width: 768px) {
+    & {
+    display: none;
+    justify-content: center;
     text-align: center;
-    color: variables.$color-fuente-1;
-    font-size: xx-large;
-    margin-top: 2em;
-    margin-bottom: 3em;
-}
+    width: 100vh;
+    }
+  }
 
+  &__logo-container {
+    width: 200px;
+    height: 195px;
+    border-radius: 3px;
+    background-image: url(../../img/PlayHardLogoFinal.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    margin-top: 1em;
+    margin-left: 1em;
 
-.section-contact{
-    display: flex;
-    justify-content: space-evenly;
-    color: variables.$color-fuente-1;
-    
     @media (max-width: 768px) {
-        & { 
-            flex-direction: column;
-        }
+      & {
+        display: none;
+      }
     }
-}
+  }
 
-fieldset{
-    border: solid 3px variables.$color-fuente-1;
-    border-radius: 5px;
-    box-shadow: variables.$box-shadow-1;
-}
-
-
-.contact{
-    width: 500px;
-    height: 500px;
-
-    &__title{
-        font-family: 'Ysabeau SC', sans-serif;
-        color: variables.$color-fuente-2;
-        margin: 25px 25px,
-        
-    }
-
-    &__phone,
-    &__address,
-    &__time,
-    &__facebook,
-    &__instagram{
-        font-family: "Bacasime Antique", serif;
-        font-size: x-large;
-        margin-left: 10px;
-        margin-bottom: 25px,
-    }
-}
-
-.form{
-    width: 500px;
-    height: 500px;
-
-    &__title{
-        font-family: 'Ysabeau SC', sans-serif;
-        color: variables.$color-fuente-2;
-        margin: 25px 25px;
-    }
-
-    &__name,
-    &__sirname,
-    &__mail,
-    &__phone,
-    &__comments{
-        font-family: "Bacasime Antique", serif;
-        font-size: x-large;
-        margin-left: 10px;
-        margin-bottom: 5px,
-    }
-
-    &__button{
-        font-family: "Bacasime Antique", serif;
-        font-size: large;
-        margin-left: 10px;
-        margin-bottom: 5px,
-    }
-
-}
-
-
-textarea{
-    margin-left: 10px;
-    resize: vertical;
-    width: 90%;
-    height: 100px;
-    max-height: 100px;
-}
-
-label{
+  &__title {
     display: block;
+    padding-top: 1em;
+  }
+
+  
 }
 
-input{
+.section-contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: variables.$color-fuente-1;
+  margin-bottom: 3em;
+
+  @media (max-width: 768px) {
+    & {
+        justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+fieldset {
+  border: solid 3px variables.$color-fuente-2;
+  border-radius: 5px;
+  background-color: white;
+  font-weight: 600;
+}
+
+.contact {
+  width: 450px;
+  height: 500px;
+
+  &__title {
+    font-family: "Ysabeau SC", sans-serif;
+    color: variables.$color-fuente-2;
+    margin: 25px 25px;
+  }
+
+  &__phone,
+  &__address,
+  &__time,
+  &__facebook,
+  &__instagram {
+    color: black;
+    font-family: "Bacasime Antique", serif;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-bottom: 25px;
+  }
+}
+
+.form {
+  width: 450px;
+  height: 500px;
+
+  &__title {
+    font-family: "Ysabeau SC", sans-serif;
+    color: variables.$color-fuente-2;
+    margin: 25px 25px;
+  }
+
+  &__name,
+  &__sirname,
+  &__mail,
+  &__phone,
+  &__comments {
+    color: black;
+    font-family: "Bacasime Antique", serif;
+    font-size: x-large;
     margin-left: 10px;
     margin-bottom: 5px;
+  }
+
+  &__button {
+    font-family: "Bacasime Antique", serif;
+    font-size: large;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
 }
 
+textarea {
+  color: black;
+  margin-left: 10px;
+  resize: vertical;
+  width: 90%;
+  height: 100px;
+  max-height: 100px;
+}
 
+label {
+  display: block;
+}
 
-
-
+input {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}

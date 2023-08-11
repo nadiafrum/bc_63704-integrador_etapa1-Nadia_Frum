@@ -13,9 +13,12 @@ footer{
     
 
     @media (max-width: 768px) {
-         & { flex-direction: column;
+         & { 
+            min-width: 480px;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
+            width: 100vh;
             
         }
     }

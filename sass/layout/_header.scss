@@ -10,12 +10,9 @@
     background-position: center;
     min-width: 600px;
     
-    
-    
-
     @media (max-width: 768px) {
-        & { /* .main-header */
-            flex-direction: column-reverse;
+        & {
+            min-width: 480px;
         }
     }
 }
@@ -69,6 +66,7 @@
         background-color: variables.$color-fondo-opacity;
         color: variables.$color-fuente-1;
         font-size: large;
+        font-weight: bold;
         padding: 0.5em 1em;
         text-decoration: none;
         border: solid 2px variables.$color-fuente-1;
@@ -90,12 +88,13 @@
 
 .search-bar {
     width: 100%;
-    height: 350px;
+    height: 275px;
     
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 3px variables.$color-fuente-1;
+    
     
 
     &__logo-container, /* search-bar__logo-container */
@@ -129,30 +128,38 @@
         font-size: xx-large;
         display: flex;
         flex-basis: 100%; /* width: 100% */
-        justify-content: center
+        justify-content: center;
         
     }
 
     &__form-label {
         color: variables.$color-fondo;
+        font-family: 'Ysabeau SC', sans-serif;
         font-weight: bolder;
         height: 20%;
         margin-right: 10px;
         font-size: xx-large;
         font-weight: bolder;
         text-shadow: 2px 3px 1px rgba(245,237,237,0.75);
+
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
         
     }
 
     &__form-search {
         background-color: white;
         width: 43%;
+        min-width: 50%;
         height: 25px;
         box-shadow: variables.$box-shadow-1;
 
         @media (max-width: 768px) {
             & {
-                min-width: 50%;
+                min-width: 160px;
             }
         }
         
