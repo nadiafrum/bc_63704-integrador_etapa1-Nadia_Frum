@@ -6,20 +6,20 @@
   width: 100%;
   height: 300px;
   font-family: "Ysabeau SC", sans-serif;
-  background-image: url(../../img/recital.jpg);
+  background-image: url(../../img/recital-2.jpg);
   background-position: 50% 60%;
   text-align: center;
-  color: variables.$color-fuente-1;
+  color: white;
   font-size: xx-large;
   margin-bottom: 3em;
   border-bottom: solid 3px variables.$color-fuente-1;
 
   @media (max-width: 768px) {
     & {
-    display: none;
-    justify-content: center;
-    text-align: center;
-    width: 100vh;
+      display: none;
+      justify-content: center;
+      text-align: center;
+      width: 100vh;
     }
   }
 
@@ -45,8 +45,6 @@
     display: block;
     padding-top: 1em;
   }
-
-  
 }
 
 .section-contact {
@@ -58,7 +56,6 @@
 
   @media (max-width: 768px) {
     & {
-        justify-content: center;
       flex-direction: column;
       align-items: center;
     }
